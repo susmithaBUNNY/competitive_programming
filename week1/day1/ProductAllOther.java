@@ -9,6 +9,7 @@ public class Solution {
 
     public static int[] getProductsOfAllIntsExceptAtIndex(int[] intArray) {
 
+        // make an array of the products
         if (intArray.length < 2)
         {
             throw new IllegalArgumentException("Array should contain atleast two numbers");
@@ -25,19 +26,33 @@ public class Solution {
             temp = temp*intArray[i];
         }
     
-        int temp = 1;
+        temp = 1;
         for (int i = intArray.length - 1; i >= 0; i--)
         {
             arr2[i] = temp;
             temp = temp*intArray[i];
         }
         
-         for (int i = 0; i < list1.length; i++)
+         for (int i = 0; i < arr1.length; i++)
          {
             res[i]=arr1[i]*arr2[i];
          }
         return res;
     }
+
+    //     return new int[intArray.length];
+    // }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

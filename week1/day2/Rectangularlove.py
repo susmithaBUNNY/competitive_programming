@@ -1,12 +1,12 @@
 import unittest
 
-def find_range_overlap(pt1, len1, pt2, len2):    
-    max_Start_Point = max(pt1, pt2)
-    min_End_Point = min(pt1 + len1, pt2 + len2)
-    if max_Start_Point >= min_End_Point:
+def find_range_overlap(poi1, len1, poi2, len2):    
+    maxStartPoint = max(poi1, poi2)
+    minEndPoint = min(poi1 + len1, poi2 + len2)
+    if maxStartPoint >= minEndPoint:
         return (None, None)  
-    overlap_length = min_End_Point - max_Start_Point
-    return (max_Start_Point, overlap_length)
+    overlap_length = minEndPoint - maxStartPoint
+    return (maxStartPoint, overlap_length)
 
 
 def find_rectangular_overlap(rect1, rect2):

@@ -11,7 +11,7 @@ class Solution {
     public static int rand5() {
     int res = 7;  
     while (res > 5) {
-        res = res();
+        res = rand7();
     }
     return res;
     }
